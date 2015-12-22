@@ -1,7 +1,7 @@
 var constantes = require('./constantes');
 var requestApi = require('./requestApi');
 
-module.export = {
+module.exports = {
 	Constantes : constantes,
 	RequestApi : requestApi
 };
