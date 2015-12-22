@@ -1,4 +1,5 @@
 var _ = require('lodash');
+var rp = require('request-promise');
 var constantes = require('../constantes');
 var requestComputerVision    = require('./computerVision.js');
 
@@ -29,7 +30,17 @@ var requestComputerVision    = require('./computerVision.js');
    * execute
    */
    function execute(request, callback){
-	   
+	   var options = {
+       url : request.url_api,
+       method : request.method,
+       headers: {
+         'content-type'              : 'application/json',
+         'Ocp-Apim-Subscription-Key' : request.key
+       },
+       qs : request.params,
+       body: request.data              
+     };
+     rp(options).then(callback).catch(callback);
    }
 
 module.exports = {

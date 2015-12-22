@@ -3,8 +3,9 @@ var request = require('./index.js');
 
 module.exports = {
 	create : function(key, requestParams){
+		this.method = 'POST'
 		this.key = key;
-		this.requestParams = {'visualFeatures': requestParams.level};
+		this.params = {'visualFeatures': requestParams.level};
 		return this;	
 	},
 	prepare : function(request, data){
