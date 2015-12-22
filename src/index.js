@@ -6,7 +6,7 @@ module.exports = {
 	Request 		: requestApi.Request,
 	create 	: requestApi.create,
 	prepare : requestApi.prepare,
-	execute : requestApi.excute
+	execute : requestApi.execute
 };
  
  

@@ -1,5 +1,5 @@
 var _ = require('lodash');
-var rp = require('request-promise');
+//var rp = require('request-promise');
 var constantes = require('../constantes');
 var requestComputerVision    = require('./computerVision.js');
 
@@ -40,7 +40,8 @@ var requestComputerVision    = require('./computerVision.js');
        qs : request.params,
        body: request.data              
      };
-     rp(options).then(callback).catch(callback);
+     callback({Faces: ['toto', 'titi']});
+     //rp(options).then(callback).catch(callback);
    }
 
 module.exports = {

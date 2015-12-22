@@ -29,7 +29,7 @@ describe('Oxford', function(){
 		it('create new request for computer vision', function(){
 			var req = Oxford.create('test', {'level': Oxford.Constantes.LEVEL.ALL},Oxford.Constantes.API.COMPUTER_VISION);
 			assert.equal(true, req.key == 'test' );
-			assert.equal(true, req.requestParams['visualFeatures']== Oxford.Constantes.LEVEL.ALL );
+			assert.equal(true, req.params['visualFeatures']== Oxford.Constantes.LEVEL.ALL );
 			assert.equal(true, req.url_api == Oxford.Constantes.URL.COMPUTER_VISION);
 		});
 		it('prepare data for excute', function(){
