@@ -9,7 +9,7 @@ module.exports = {
 		return this;	
 	},
 	prepare : function(request, data){
-		request.data = {url:data.url};
+		request.data = {Url:data.Url};
 		return request;
 	}
 }

@@ -3,7 +3,7 @@ module.exports = {
 		'COMPUTER_VISION' : 'https://api.projectoxford.ai/vision/v1/analyses'
 	},
 	'LEVEL': {
-		'ALL' 		: 'all',
+		'ALL' 		: 'All',
 		'TYPE_IMG' 	: 'ImageType',
 		'COLOR'    	: 'Color',
 		'FACES'    	: 'Faces',

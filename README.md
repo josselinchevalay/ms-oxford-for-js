@@ -28,3 +28,8 @@ request
 	})
 	.excute(reuqest, function(result) {});
 ```
+
+h2. Enviroment variable for test
+
+```
+OXFORD_COMPUTE_VISION_KEY = "" ; // fey for compute vision
