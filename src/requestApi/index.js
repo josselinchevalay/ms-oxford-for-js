@@ -31,16 +31,19 @@ var requestComputerVision    = require('./computerVision.js');
    */
    function execute(request, callback){
 	   var options = {
-       url : request.url_api+'?visualFeatures='+request.params.visualFeatures,
+       url : request.url_api,
        method : request.method,
        headers: {
          'content-type'              : 'application/json',
          'Ocp-Apim-Subscription-Key' : request.key
        },
        qs : request.params,
-       body: request.data              
+       body: request.data,
+       json: true            
      };
-     rp(options).then(callback).catch(callback);
+     rp(options)
+        .then(callback)
+        .catch(callback);
    }
 
 module.exports = {

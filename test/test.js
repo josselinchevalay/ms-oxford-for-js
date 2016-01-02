@@ -47,6 +47,7 @@ describe('Oxford', function(){
 			req = Oxford.prepare(req, {Url:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/2000px-W3C%C2%AE_Icon.svg.png'});
 			Oxford.execute(req, function(result){
 				console.log(result);
+				assert.equal(true, 1 = 1);
 			});
 		});
 	});
