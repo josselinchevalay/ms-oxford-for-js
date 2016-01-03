@@ -29,6 +29,20 @@ request
 	.excute(reuqest, function(result) {});
 ```
 
+other example
+
+```
+var key = process.env.OXFORD_COMPUTE_VISION_KEY;
+
+
+var req = Oxford.create(key, {'level': Oxford.Constantes.LEVEL.ALL},Oxford.Constantes.API.COMPUTER_VISION);
+req = Oxford.prepare(req, {Url:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/2000px-W3C%C2%AE_Icon.svg.png'});
+
+Oxford.execute(req, function(result){
+	console.log(result);
+}); 
+```
+
 h2. Enviroment variable for test
 
 ```
