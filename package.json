@@ -1,0 +1,35 @@
+{
+  "name": "ms-oxford-for-js",
+  "version": "0.0.15",
+  "description": "sdk for microsoft oxford project on nodejs and js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "grunt-browserify": "^4.0.1",
+    "request-promise": "^1.0.2",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/josselinchevalay/ms-oxford-for-js.git"
+  },
+  "keywords": [
+    "sdk",
+    "Oxford",
+    "Microsoft"
+  ],
+  "author": "josselin chevalay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josselinchevalay/ms-oxford-for-js/issues"
+  },
+  "homepage": "https://github.com/josselinchevalay/ms-oxford-for-js"
+}
