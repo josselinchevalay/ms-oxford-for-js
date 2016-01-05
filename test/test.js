@@ -33,8 +33,9 @@ describe('Oxford', function(){
 	describe('requestAPI', function(){
 		it('create new request for computer vision', function(){
 			var req = Oxford.create(ComputerVision, {'level': Oxford.Constantes.LEVEL.ALL},Oxford.Constantes.API.COMPUTER_VISION);
+            var params = req.params;
 			assert.equal(true, req.key == ComputerVision );
-			assert.equal(true, req.params['visualFeatures']== Oxford.Constantes.LEVEL.ALL );
+			assert.equal(true, params.visualFeatures== Oxford.Constantes.LEVEL.ALL );
 			assert.equal(true, req.url_api == Oxford.Constantes.URL.COMPUTER_VISION);
 		});
 		it('prepare data for excute', function(){
@@ -47,7 +48,8 @@ describe('Oxford', function(){
 			req = Oxford.prepare(req, {Url:'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/W3C%C2%AE_Icon.svg/2000px-W3C%C2%AE_Icon.svg.png'});
 			Oxford.execute(req, function(result){
 				console.log(result);
-				assert.equal(true, 1 = 1);
+                var t = 1;
+				assert.equal(true, t == 1);
 			});
 		});
 	});

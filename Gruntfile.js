@@ -13,15 +13,20 @@ module.exports = function(grunt){
                 },
                 src: ['test/**/*.js']
             }
+        },        
+        // jshint
+        jshint: {
+            all: ['Gruntfile.js', 'src/**/*.js', 'test/**/*.js']
         }
         
     });
     
     
-    // Add the grunt-mocha-test tasks. 
+    // Add the NPM deb 
     grunt.loadNpmTasks('grunt-mocha-test');
-    
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+   
     
     // Add Task
-    grunt.registerTask('default', ['mochaTest']);
+    grunt.registerTask('default', ['jshint','mochaTest']);
 };
